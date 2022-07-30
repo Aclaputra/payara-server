@@ -12,3 +12,6 @@ how to specifically custom your domain name:
 ```bash
 ./asadmin start-domain <your-domain-name>
 ```
+
+references:
+- https://jakarta.ee/
