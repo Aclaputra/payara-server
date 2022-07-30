@@ -14,4 +14,5 @@ how to specifically custom your domain name:
 ```
 
 references:
-- official documentation: https://jakarta.ee/
+- official documentation of jakarta ee: https://jakarta.ee/
+- download payara server: https://www.payara.fish/downloads/payara-platform-community-edition/
