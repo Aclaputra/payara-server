@@ -14,4 +14,4 @@ how to specifically custom your domain name:
 ```
 
 references:
-- https://jakarta.ee/
+- official documentation: https://jakarta.ee/
