@@ -6,3 +6,9 @@ run payara server (go to the location where you extracted the payara folder) the
 cd bin/
 ./asadmin start-domain
 ```
+it will automatically start domain on domain1 at localhost:4848 for admin and localhost:8080 for http
+
+how to specifically custom your domain name:
+```bash
+./asadmin start-domain <your-domain-name>
+```
