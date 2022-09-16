@@ -18,9 +18,11 @@ build the app with gradle or maven, then deploy the exported jar/war file :
 sudo ./asadmin deploy /opt/lampp/htdocs/twitter-app/build/libs/twitter.war
 ```
 
-check if the app is up and running :
-```bash
+check if the app is up and running at localhost:8080/twitter/api/hello
 
+## docker method :
+```bash
+docker compose up -d
 ```
 
 references:
