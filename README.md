@@ -24,6 +24,9 @@ check if the app is up and running at localhost:8080/twitter/api/hello
 ```bash
 docker compose up -d
 ```
+it will automatically start domain on domain1 at localhost:4848 for admin and
+localhost:8080 for http, localhost:4848 default username and password is admin
+(auto generated from the docker image).
 
 references:
 - official documentation of jakarta ee: https://jakarta.ee/
