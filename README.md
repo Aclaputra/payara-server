@@ -13,6 +13,17 @@ how to specifically custom your domain name:
 ./asadmin start-domain <your-domain-name>
 ```
 
+build the app with gradle or maven, then deploy the exported jar/war file :
+```bash
+sudo ./asadmin deploy /opt/lampp/htdocs/twitter-app/build/libs/twitter.war
+```
+
+check if the app is up and running :
+```bash
+
+```
+
 references:
 - official documentation of jakarta ee: https://jakarta.ee/
 - download payara server: https://www.payara.fish/downloads/payara-platform-community-edition/
+- Getting Started with Jakarta EE 9: https://www.youtube.com/watch?v=D1LZAaO_pxI&list=PLFMhxiCgmMR9Pu0v-VjNdEaRLcoUqHLFT&index=3&ab_channel=Payara
