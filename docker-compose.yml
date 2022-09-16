@@ -1,0 +1,18 @@
+# created by Muhammad Acla (github: https://github.com/aclaputra)
+version: '3'
+services:
+  payara:
+    image: 'payara/server-full'
+    build: payara
+    ports:
+      - 4848:4848
+      - 8080:8080
+      - 8181:8181
+    volumes:
+      - ./deployments:/opt/payara41/deployments
+      - ./logs:/payara41/glassfish/domains/payaradomain/logs
+      - ./vvvConfiguration:/opt/vdz/config
+    working_dir: /opt/payara41/bin
+    environment:
+      - PAYARA_DOMAIN=payaradomain
+
