@@ -1,5 +1,5 @@
-# payara-server
-Built Jakarta EE application with payara server and gradle to build the project.
+# Payara sever - h2 database
+Build Twitter Clone made with Jakarta EE 9 application using payara 5.2 server, gradle and React TypeScript.
 
 run payara server (go to the location where you extracted the payara folder) then write this command:
 ```bash
