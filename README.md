@@ -36,3 +36,5 @@ references:
 - getting Started with Jakarta EE 9: https://www.youtube.com/watch?v=D1LZAaO_pxI&list=PLFMhxiCgmMR9Pu0v-VjNdEaRLcoUqHLFT&index=3&ab_channel=Payara
 - getting inside docker container: https://www.tutorialspoint.com/how-do-i-get-into-a-docker-container-s-shell
 - react typescript official documentation: https://reactjs.org/docs/static-type-checking.html#typescript
+- payara server docker: https://stackoverflow.com/questions/48827659/payara-server-in-docker-compose-up
+- using payara with mysql : https://blog.payara.fish/using-mysql-with-payara
