@@ -4,6 +4,7 @@ services:
   payara:
     image: 'payara/server-full'
     command: sh -c "/opt/payara/appserver/bin/asadmin --user admin --passwordfile /opt/payara/passwordFile" 
+    command: sh -c "start-domain ${PAYARA_DOMAIN}"
     command: sh -c "deploy /opt/payara/deployments/twitter.war"
     build: payara
     ports:
