@@ -28,7 +28,10 @@ it will automatically start domain on domain1 at localhost:4848 for admin and
 localhost:8080 for http, localhost:4848 default username and password is admin
 (auto generated from the docker image).
 
+
+
 references:
 - official documentation of jakarta ee: https://jakarta.ee/
 - download payara server: https://www.payara.fish/downloads/payara-platform-community-edition/
-- Getting Started with Jakarta EE 9: https://www.youtube.com/watch?v=D1LZAaO_pxI&list=PLFMhxiCgmMR9Pu0v-VjNdEaRLcoUqHLFT&index=3&ab_channel=Payara
+- getting Started with Jakarta EE 9: https://www.youtube.com/watch?v=D1LZAaO_pxI&list=PLFMhxiCgmMR9Pu0v-VjNdEaRLcoUqHLFT&index=3&ab_channel=Payara
+- getting inside docker container: https://www.tutorialspoint.com/how-do-i-get-into-a-docker-container-s-shell
