@@ -13,7 +13,7 @@ services:
       - 8181:8181
     volumes:
       - ./logs:/opt/payara/appserver/glassfish/domains/payaradomain/logs
-      - ./build/libs/twitter.war:/opt/payara/deployments
+      - ./build/libs:/opt/payara/deployments
     working_dir: /opt/payara/deployments
     environment:
       - PAYARA_DOMAIN=payaradomain
