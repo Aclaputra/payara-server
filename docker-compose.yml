@@ -3,10 +3,8 @@ version: '3'
 services:
   payara:
     image: 'payara/server-full'
-    command: sh -c "/opt/payara/appserver/bin/asadmin"
-    command: sh -c "admin"
-    command: sh -c "admin"
-    command: sh -c "deploy /opt/lampp/htdocs/twitter-app/build/libs/twitter.war"
+    command: sh -c "/opt/payara/appserver/bin/asadmin --user admin --passwordfile /opt/payara/passwordFile" 
+    command: sh -c "deploy /opt/payara/deployments/twitter.war"
     build: payara
     ports:
       - 4848:4848
