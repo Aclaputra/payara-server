@@ -3,7 +3,7 @@ version: '3'
 services:
   payara:
     image: 'payara/server-full'
-    command: sh -c "${AS_ADMIN_PATH} --user admin --passwordfile ${PASSWORDFILE_PATH}" 
+    command: sh -c "${AS_ADMIN_PATH} --user ${USER} --passwordfile ${PASSWORDFILE_PATH}" 
     command: sh -c "start-domain ${PAYARA_DOMAIN}"
     command: sh -c "deploy ${DEPLOYMENTS_DIR}${WAR_FILE}"
     build: payara
@@ -16,6 +16,7 @@ services:
       - ./build/libs:/opt/payara/deployments
     working_dir: /opt/payara/deployments
     environment:
+      - USER=admin
       - PAYARA_DOMAIN=payaradomain
       - DEPLOYMENTS_DIR=/opt/payara/deployments
       - WAR_FILE=/twitter.war
