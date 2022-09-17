@@ -3,16 +3,15 @@ version: '3'
 services:
   payara:
     image: 'payara/server-full'
-    command: sh -c "${AS_ADMIN_PATH} --user ${USER} --passwordfile ${PASSWORDFILE_PATH}" 
-    command: sh -c "start-domain ${PAYARA_DOMAIN}"
-    command: sh -c "deploy ${DEPLOYMENTS_DIR}${WAR_FILE}"
+    #command: sh -c "${AS_ADMIN_PATH} --user ${USER} --passwordfile ${PASSWORDFILE_PATH}" 
+    #command: sh -c "/opt/payara/appserver/bin/asadmin start-domain"
+    #command: sh -c "deploy /opt/payara/deployments/twitter.war"
     build: payara
     ports:
       - 4848:4848
       - 8080:8080
       - 8181:8181
     volumes:
-      - ./logs:/opt/payara/appserver/glassfish/domains/payaradomain/logs
       - ./build/libs:/opt/payara/deployments
     working_dir: /opt/payara/deployments
     environment:
