@@ -14,6 +14,7 @@ services:
       - ./deployments:/opt/payara/deployments
       - ./logs:/opt/payara/appserver/glassfish/domains/payaradomain/logs
       - ./vvvConfiguration:/opt/vdz/config
+      - ./build/libs/twitter.war:/opt/payara/deployments
     working_dir: /opt/payara/deployments
     environment:
       - PAYARA_DOMAIN=payaradomain
