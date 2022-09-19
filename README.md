@@ -38,3 +38,4 @@ references:
 - react typescript official documentation: https://reactjs.org/docs/static-type-checking.html#typescript
 - payara server docker: https://stackoverflow.com/questions/48827659/payara-server-in-docker-compose-up
 - using payara with mysql : https://blog.payara.fish/using-mysql-with-payara
+- more official jakarta ee + payara tutorial : https://www.payara.fish/solutions/jakarta-ee-and-the-payara-platform/ 
